@@ -14,7 +14,8 @@ class MovieAdapter (val listOfMovies : List<Movie>,val context : Context):Recycl
         return MovieViewHolder(itemBinding)
     }
 
-    override fun getItemCount(): Int = listOfMovies.size
+    override fun getItemCount(): Int =
+ listOfMovies.size
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         holder.movieTitle.text = listOfMovies[position].name
